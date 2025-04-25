@@ -5,7 +5,7 @@ Please see below for example images, the list of malware families included in th
 
 
 ## Image Examples
-![Malware Family Examples](./archive/malware_family_img.pdf)
+![Malware Family Examples](./archive/malware_family_img.jpg)
 
 ## Classes (Families)
 
