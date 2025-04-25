@@ -1,15 +1,15 @@
 # MalBeWare Benchmark
-**MalBeWare** is a malware classification benchmark designed to identify the family of a given sample (e.g., *Adialer.C*, *Agent.FYI*). It is based on the [Malimg dataset](https://paperswithcode.com/dataset/malimg), which contains 25 malware families. Each sample is represented as a grayscale image derived from an executable file.  
-We evaluate robustness against \( L_\infty \) perturbations of magnitudes \(\{1/255, 2/255, 3/255\}\), following the setting described in *Case Study: Neural Network Malware Detection Verification for Feature and Image Datasets*.  
+**MalBeWare** is a malware classification benchmark designed to identify the family of a given sample (e.g., *Adialer.C*, *Agent.FYI*). It is based on the [Malimg dataset](https://paperswithcode.com/dataset/malimg), which contains 25 malware families. Each sample is represented as a grayscale image derived from an executable file. We evaluate robustness against \( L_\infty \) perturbations of magnitudes \{1/255, 2/255, 3/255\}, following the setting described in [*Case Study: Neural Network Malware Detection Verification for Feature and Image Datasets*](https://dl.acm.org/doi/abs/10.1145/3644033.3644372).  
+
 Please see below for example images, the list of malware families included in the dataset, and the perturbations considered.
 
 
 ## Image Examples
-![Malware Family Examples](archive/malware_family_img.pdf)
+![Malware Family Examples](./archive/malware_family_img.pdf)
 
 ## Classes (Families)
-|                  | Num Samples     |
-| Malimg Class     | ε=1 | ε=2 | ε=3 |
+
+| Malimg Class     | Num Samples (ε=1) | Num Samples (ε=2) | Num Samples (ε=3)  |
 |------------------|-----|-----|-----|
 | Adialer.C        | 5   | 5   | 5   |
 | Agent.FYI        | 5   | 5   | 5   |
@@ -37,7 +37,9 @@ Please see below for example images, the list of malware families included in th
 | Wintrim.BX       | 5   | 5   | 5   |
 | Yuner.A          | 5   | 5   | 5   |
 
+
 ## References
+```
 @inproceedings{robinette2024case,
   title={Case study: Neural network malware detection verification for feature and image datasets},
   author={Robinette, Preston K and Manzanas Lopez, Diego and Serbinowska, Serena and Leach, Kevin and Johnson, Taylor T},
@@ -45,7 +47,9 @@ Please see below for example images, the list of malware families included in th
   pages={127--137},
   year={2024}
 }
+```
 
+```
 @inproceedings{nataraj2011malware,
   title={Malware images: visualization and automatic classification},
   author={Nataraj, Lakshmanan and Karthikeyan, Sreejith and Jacob, Gregoire and Manjunath, Bangalore S},
@@ -53,3 +57,4 @@ Please see below for example images, the list of malware families included in th
   pages={1--7},
   year={2011}
 }
+```
