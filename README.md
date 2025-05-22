@@ -1,11 +1,11 @@
 # MalBeWare Benchmark
-**MalBeWare** is a malware classification benchmark designed to identify the family of a given sample (e.g., *Adialer.C*, *Agent.FYI*). It is based on the [Malimg dataset](https://paperswithcode.com/dataset/malimg), which contains 25 malware families. Each sample is represented as a grayscale image derived from an executable file. We evaluate robustness against \( L_\infty \) perturbations of magnitudes \{1/255, 2/255, 3/255\}, following the setting described in [*Case Study: Neural Network Malware Detection Verification for Feature and Image Datasets*](https://dl.acm.org/doi/abs/10.1145/3644033.3644372).  
+**MalBeWare** is a malware classification benchmark designed to identify the family of a given sample (e.g., *Adialer.C*, *Agent.FYI*). It is based on the [Malimg dataset](https://paperswithcode.com/dataset/malimg), which contains 25 malware families. Each sample is represented as a grayscale image derived from an executable file. We evaluate robustness against $L_\infty$ perturbations of magnitudes $\{\frac{1}{255}, \frac{2}{255}, \frac{3}{255}}$, following the setting described in [*Case Study: Neural Network Malware Detection Verification for Feature and Image Datasets*](https://dl.acm.org/doi/abs/10.1145/3644033.3644372).  
 
-Please see below for example images, the list of malware families included in the dataset, and the perturbations considered.
+Please see below for example images and the list of malware families included in the dataset.
 
 
 ## Image Examples
-![Malware Family Examples](./archive/malware_family_img.pdf)
+![Malware Family Examples](./archive/malware_family_img.jpg)
 
 ## Classes (Families)
 
