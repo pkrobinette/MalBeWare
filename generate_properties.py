@@ -15,6 +15,7 @@ import random
 import csv
 import os
 import sys
+import glob
 
 TIMEOUT=100
 NUM_SAMPLES=50
@@ -23,8 +24,8 @@ def main():
     #
     # load onnx models and vnnlib files
     #
-    onnx_models = list(reversed(sorted([m for m in os.listdir("onnx") if ".onnx" in m])))
-    vnnlib_files = sorted([v for v in os.listdir("vnnlib") if ".vnnlib" in v])
+    onnx_models = list(reversed(sorted(glob.glob(os.path.join("onnx", "*.onnx")))))
+    vnnlib_files = list(reversed(sorted(glob.glob(os.path.join("vnnlib", "*.vnnlib")))))
     #
     # set the seed and randomly select files
     #
